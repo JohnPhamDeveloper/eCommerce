@@ -12,9 +12,7 @@ class Directory extends React.PureComponent {
   };
 
   renderSections = () => {
-    return this.state.sections.map((section) => (
-      <MenuItem id={section.id} title={section.title} subtitle={section.subtitle} imageUrl={section.imageUrl} size={section.size} />
-    ));
+    return this.state.sections.map(({ id, ...otherSectionProps }) => <MenuItem key={id} {...otherSectionProps} />);
   };
 
   render() {

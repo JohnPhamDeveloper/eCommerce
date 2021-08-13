@@ -10,6 +10,10 @@
   position: relative;
   overflow: hidden;
 
+  &.large {
+    height: 380px;
+  }
+
   &:hover {
     cursor: pointer;
 
@@ -63,8 +67,4 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-
-  &.large {
-    height: 380px;
-  }
 }
